@@ -1,0 +1,624 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo,github," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="好久之前就想自己搭一个博客来玩玩了，可惜太懒一直没去弄。直到最近看到了Hexo使用hexo＋github pages搭博客不仅简单，而且还免费。我这么好(kou)学(men)的好孩子怎么能不插一脚呢！果断弄起来呀！
+一、git1.1 下载安装gitgit的安装可以通过下面两种方法：1.去git的官网中下载Git for Mac2.去github的官网下载GitHub Desktop下载完成后按">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo＋Github pages搭建第一个博客">
+<meta property="og:url" content="http://yoursite.com/2016/09/15/firstpost/index.html">
+<meta property="og:site_name" content="Tim's blog">
+<meta property="og:description" content="好久之前就想自己搭一个博客来玩玩了，可惜太懒一直没去弄。直到最近看到了Hexo使用hexo＋github pages搭博客不仅简单，而且还免费。我这么好(kou)学(men)的好孩子怎么能不插一脚呢！果断弄起来呀！
+一、git1.1 下载安装gitgit的安装可以通过下面两种方法：1.去git的官网中下载Git for Mac2.去github的官网下载GitHub Desktop下载完成后按">
+<meta property="og:image" content="http://yoursite.com/images/settings.png">
+<meta property="og:image" content="http://yoursite.com/images/newssh.png">
+<meta property="og:image" content="http://yoursite.com/images/addssh.png">
+<meta property="og:image" content="http://yoursite.com/images/newrepo.png">
+<meta property="og:image" content="http://yoursite.com/images/ifgit.png">
+<meta property="og:updated_time" content="2016-09-15T14:07:18.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo＋Github pages搭建第一个博客">
+<meta name="twitter:description" content="好久之前就想自己搭一个博客来玩玩了，可惜太懒一直没去弄。直到最近看到了Hexo使用hexo＋github pages搭博客不仅简单，而且还免费。我这么好(kou)学(men)的好孩子怎么能不插一脚呢！果断弄起来呀！
+一、git1.1 下载安装gitgit的安装可以通过下面两种方法：1.去git的官网中下载Git for Mac2.去github的官网下载GitHub Desktop下载完成后按">
+<meta name="twitter:image" content="http://yoursite.com/images/settings.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"right","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/09/15/firstpost/"/>
+
+  <title> Hexo＋Github pages搭建第一个博客 | Tim's blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Tim's blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Hexo＋Github pages搭建第一个博客
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-15T18:31:09+08:00" content="2016-09-15">
+              2016-09-15
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/09/15/firstpost/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/15/firstpost/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>  好久之前就想自己搭一个博客来玩玩了，可惜太懒一直没去弄。直到最近看到了Hexo使用hexo＋github pages搭博客不仅简单，而且还免费。我这么好(kou)学(men)的好孩子怎么能不插一脚呢！果断弄起来呀！</p>
+<h2 id="一、git"><a href="#一、git" class="headerlink" title="一、git"></a>一、git</h2><h3 id="1-1-下载安装git"><a href="#1-1-下载安装git" class="headerlink" title="1.1 下载安装git"></a>1.1 下载安装git</h3><p>git的安装可以通过下面两种方法：<br>1.去git的官网中下载<a href="https://git-scm.com/download/mac" target="_blank" rel="external">Git for Mac</a><br>2.去github的官网下载<a href="https://desktop.github.com" target="_blank" rel="external">GitHub Desktop</a><br>下载完成后按照提示完成安装。</p>
+<h3 id="1-2-配置git"><a href="#1-2-配置git" class="headerlink" title="1.2 配置git"></a>1.2 配置git</h3><p>完成安装后需要进行一些配置，才能正常的使用git。</p>
+<h4 id="配置SSH-keys"><a href="#配置SSH-keys" class="headerlink" title="配置SSH keys"></a>配置SSH keys</h4><p>首先检查SSH key<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> ~/.ssh</div></pre></td></tr></table></figure></p>
+<p>如果提示：No such file or directory说明第一次使用git，然后执行以下步骤生成新的SSH Key<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C <span class="string">"email@youremail.com"</span></div><div class="line">Generating public/private rsa key pair.</div><div class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/Users/your_user_directory/.ssh/id_rsa):&lt;回车就好&gt;</div><div class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):&lt;输入加密串&gt;</div><div class="line">Enter same passphrase again:&lt;再次输入加密串&gt;</div></pre></td></tr></table></figure></p>
+<p>可以直接按3次回车，也可设置密码。这个密码会在提交项目时使用，如果为空（直接按3次回车则未空）的话提交项目时不用输入。</p>
+<h4 id="向ssh-agent添加key"><a href="#向ssh-agent添加key" class="headerlink" title="向ssh-agent添加key"></a>向ssh-agent添加key</h4><p>首先保证ssh-agent可运行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-agent <span class="_">-s</span></div></pre></td></tr></table></figure></p>
+<p>添加SSH key<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-add ~/.ssh/id_rsa</div></pre></td></tr></table></figure></p>
+<h4 id="添加SSH-key到GitHub"><a href="#添加SSH-key到GitHub" class="headerlink" title="添加SSH key到GitHub"></a>添加SSH key到GitHub</h4><p>在本机设置SSH Key之后，需要添加到GitHub上，以完成SSH链接的设置<br>1.拷贝key<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ clip &lt; ~/.ssh/id_rsa.pub</div></pre></td></tr></table></figure></p>
+<p>2.在GitHub右上方点击头像，选择“Settings”<br><img src="/images/settings.png"><br>3.在左侧导航中选择“SSH and GPG keys”,然后在右上角点击“New SSH key”<br><img src="/images/newssh.png"><br>4.将第1步中拷贝出来的key粘贴到“key”中，然后点击“add ssh key”。<br><img src="/images/addssh.png"></p>
+<h4 id="设置用户名和邮箱地址"><a href="#设置用户名和邮箱地址" class="headerlink" title="设置用户名和邮箱地址"></a>设置用户名和邮箱地址</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name <span class="string">"username"</span></div><div class="line">$ git config --global user.email <span class="string">"username@example.com"</span></div></pre></td></tr></table></figure>
+<h3 id="1-3-测试链接"><a href="#1-3-测试链接" class="headerlink" title="1.3 测试链接"></a>1.3 测试链接</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@github.com</div></pre></td></tr></table></figure>
+<p>如果出现以下信息<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">The authenticity of host <span class="string">'github.com (207.97.227.239)'</span> can<span class="string">'t be established.</span></div><div class="line">RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.</div><div class="line">Are you sure you want to continue connecting (yes/no)?</div></pre></td></tr></table></figure></p>
+<p>就键入：yes。之后就能看到如下信息：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Hi username! You<span class="string">'ve successfully authenticated, but GitHub does not</span></div><div class="line">provide shell access.</div></pre></td></tr></table></figure></p>
+<h2 id="二、创建github仓库"><a href="#二、创建github仓库" class="headerlink" title="二、创建github仓库"></a>二、创建github仓库</h2><h3 id="2-1-在github中创建blog的仓库"><a href="#2-1-在github中创建blog的仓库" class="headerlink" title="2.1 在github中创建blog的仓库"></a>2.1 在github中创建blog的仓库</h3><p>点击github个人主页的右上角的”new repository”创建新的仓库<br><img src="/images/newrepo.png"><br>在创建页面中只需要填写repository name即可，repository name的格式必须是name.github.io 。这样github pages 才能识别出来。</p>
+<h3 id="2-2-克隆本地仓库"><a href="#2-2-克隆本地仓库" class="headerlink" title="2.2 克隆本地仓库"></a>2.2 克隆本地仓库</h3><p>在github上创建好blog的仓库后可先行科隆到本地，这一步不做也没关系，因为后面的部分操作可能导致此步报废。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github.com:username/name.github.io.git</div></pre></td></tr></table></figure></p>
+<h2 id="三、Hexo"><a href="#三、Hexo" class="headerlink" title="三、Hexo"></a>三、Hexo</h2><p>Hexo的安装过程可以在<a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">Hexo</a>的官网中找到。</p>
+<h3 id="3-1-Hexo安装前准备"><a href="#3-1-Hexo安装前准备" class="headerlink" title="3.1 Hexo安装前准备"></a>3.1 Hexo安装前准备</h3><p>安装Hexo之前需要确保机器上有npm和Nodejs。高版本的Nodejs中包含了npm，所以直接安装Nodejs即可。<br>Nodejs可直接在<a href="https://nodejs.org/en/" target="_blank" rel="external">Nodejs官网</a>下载安装包，根据提示完成安装即可。</p>
+<h3 id="3-2-Hexo安装"><a href="#3-2-Hexo安装" class="headerlink" title="3.2 Hexo安装"></a>3.2 Hexo安装</h3><p>hexo是需要在用户拥有完全控制权的目录下进行安装的，可直接在2.2中克隆出来的仓库路径下进行安装。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ sudo npm install -g hexo</div><div class="line">$ hexo init </div><div class="line">$ npm install</div><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p>查看克隆的目录下是否还存在.git<br><img src="/images/ifgit.png"><br>若不存在则执行以下命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git init</div><div class="line">$ git remote add origin git@github.com:username/name.github.io.git</div></pre></td></tr></table></figure></p>
+<p>然后就可以将hexo项目提交到github中管理<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ git checkout --orphan hexo</div><div class="line">$ git add .</div><div class="line">$ git commit -m <span class="string">"first post"</span></div><div class="line">$ git push origin hexo</div></pre></td></tr></table></figure></p>
+<h3 id="3-3-配置发布"><a href="#3-3-配置发布" class="headerlink" title="3.3 配置发布"></a>3.3 配置发布</h3><p>在blog的仓库目录下现在会有_config.yml，编辑此文件。<br>默认生成的_config.yml中有这一段<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Deployment</span></div><div class="line"><span class="comment">## Docs: http://hexo.io/docs/deployment.html</span></div><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>:</div></pre></td></tr></table></figure></p>
+<p>修改后如下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repo: 对应仓库的SSH地址（可以在GitHub对应的仓库中复制）</div><div class="line">  branch: 分支（我使用master分支存放发布后的静态文件，用hexo分支存hexo项目文件）</div></pre></td></tr></table></figure></p>
+<p>PS：配置文件中“:”后面必须有一个空格。<br>修改成功后执行下列指令进行部署<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo g</div><div class="line">$ hexo d</div></pre></td></tr></table></figure></p>
+<p>然后访问namme.github.io就可以看到blog了。</p>
+<h2 id="四、参考链接"><a href="#四、参考链接" class="headerlink" title="四、参考链接"></a>四、参考链接</h2><ol>
+<li><a href="http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo搭建博客/" target="_blank" rel="external">GitHub-Pages-Hexo搭建博客</a></li>
+<li><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">NexT主题</a></li>
+<li><a href="http://blog.csdn.net/poem_of_sunshine/article/details/29369785" target="_blank" rel="external">如何搭建一个独立博客——简明Github Pages与Hexo教程</a>
+</li>
+</ol>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Hexo/" rel="tag">#Hexo</a>
+          
+            <a href="/tags/github/" rel="tag">#github</a>
+          
+        </div>
+      
+
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/09/15/firstpost/"
+           data-title="Hexo＋Github pages搭建第一个博客" data-url="http://yoursite.com/2016/09/15/firstpost/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/headportrait.jpeg"
+               alt="Tim" />
+          <p class="site-author-name" itemprop="name">Tim</p>
+          <p class="site-description motion-element" itemprop="description">记录成长的时刻</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、git"><span class="nav-number">1.</span> <span class="nav-text">一、git</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-下载安装git"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 下载安装git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-配置git"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 配置git</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置SSH-keys"><span class="nav-number">1.2.1.</span> <span class="nav-text">配置SSH keys</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#向ssh-agent添加key"><span class="nav-number">1.2.2.</span> <span class="nav-text">向ssh-agent添加key</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加SSH-key到GitHub"><span class="nav-number">1.2.3.</span> <span class="nav-text">添加SSH key到GitHub</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置用户名和邮箱地址"><span class="nav-number">1.2.4.</span> <span class="nav-text">设置用户名和邮箱地址</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-测试链接"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 测试链接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、创建github仓库"><span class="nav-number">2.</span> <span class="nav-text">二、创建github仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-在github中创建blog的仓库"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 在github中创建blog的仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-克隆本地仓库"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 克隆本地仓库</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、Hexo"><span class="nav-number">3.</span> <span class="nav-text">三、Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-Hexo安装前准备"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 Hexo安装前准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-Hexo安装"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 Hexo安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-配置发布"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 配置发布</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、参考链接"><span class="nav-number">4.</span> <span class="nav-text">四、参考链接</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tim</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"tim-blog"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
